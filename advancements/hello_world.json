@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "enter_world": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "dimension": "overworld",
+        "position": {
+          "x": { "min": -30000000, "max": 30000000 },
+          "y": { "min": 0, "max": 320 },
+          "z": { "min": -30000000, "max": 30000000 }
+        }
+      }
+    }
+  },
+  "display": {
+    "title": { "text": "Hello World!" },
+    "description": { "text": "JSON-only hello world" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  }
+}

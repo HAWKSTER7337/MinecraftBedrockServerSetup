@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Simple Addtions for the Minecraft Bedrock Server For the Boys",
+    "name": "HawkstersModPack",
+    "uuid": "c0d3c97c-7c45-4d60-8a6e-15868ddb2f70",
+    "version": [1, 0, 1],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "description": "Hello WorldScript",
+      "type": "data",
+      "uuid": "0eaed3b8-98a6-4310-bf1a-da18e3c00c6a",
+      "version": [1, 0, 1]
+    }
+  ]
+}
