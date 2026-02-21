@@ -20,9 +20,6 @@
 #   Ancient Debris = 50   (very rare)
 #   Netherite Ingot= 60   (extremely rare)
 
-# ===== Debug confirmation =====
-tellraw @a {"rawtext":[{"text":"§e[Threat Check] Running..."}]}
-
 # ===== Tick down spawn cooldown (1 per second) =====
 scoreboard players remove @a[scores={spawn_cooldown=1..}] spawn_cooldown 1
 

@@ -2,8 +2,8 @@
 # Spawns 2 Vindicators + 2 Strays (with helmets for sun protection)
 # Sets a 30-second cooldown before mobs can spawn again
 
-# ===== Set 30-second cooldown =====
-scoreboard players set @s spawn_cooldown 30
+# ===== Set 300-second cooldown =====
+scoreboard players set @s spawn_cooldown 300
 
 # ===== Warn the player =====
 tellraw @s {"rawtext":[{"text":"§c§lYour ore haul has attracted dangerous creatures..."}]}
