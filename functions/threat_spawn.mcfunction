@@ -9,15 +9,15 @@ scoreboard players set @s spawn_cooldown 30
 tellraw @s {"rawtext":[{"text":"§c§lYour ore haul has attracted dangerous creatures..."}]}
 
 # ===== Spawn 2 Vindicators (always hostile to players) =====
-summon vindicator ~2 ~1 ~
-summon vindicator ~-2 ~1 ~
+summon vindicator ~4 ~1 ~
+summon vindicator ~-4 ~1 ~
 
 # ===== Spawn 2 Strays with helmets =====
 # First tag any pre-existing strays so we only helmet the new ones
 tag @e[type=stray] add pre_existing_stray
 
-summon stray ~3 ~1 ~
-summon stray ~-3 ~1 ~
+summon stray ~ ~1 ~4
+summon stray ~ ~1 ~-4
 
 # Give iron helmets only to the newly spawned strays (no pre_existing_stray tag)
 replaceitem entity @e[type=stray,tag=!pre_existing_stray] slot.armor.head 0 iron_helmet
