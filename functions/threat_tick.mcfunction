@@ -5,13 +5,11 @@
 scoreboard objectives add threat dummy
 scoreboard objectives add spawn_cooldown dummy
 scoreboard objectives add sys_tick dummy
-scoreboard objectives add vind_name_idx dummy
-scoreboard objectives add stray_name_idx dummy
+scoreboard objectives add mob_name_idx dummy
 scoreboard objectives add spawn_timer dummy
 
-# Initialize name counters for SYSTEM if not set
-scoreboard players add SYSTEM vind_name_idx 0
-scoreboard players add SYSTEM stray_name_idx 0
+# Initialize name counter for SYSTEM if not set
+scoreboard players add SYSTEM mob_name_idx 0
 
 # Initialize scores for any new players who joined
 scoreboard players add @a threat 0
