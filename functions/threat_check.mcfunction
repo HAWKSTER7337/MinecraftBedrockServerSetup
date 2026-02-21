@@ -117,6 +117,21 @@ execute as @a[hasitem={item=diamond,quantity=2..}] run scoreboard players add @s
 execute as @a[hasitem={item=diamond,quantity=3..}] run scoreboard players add @s threat 20
 execute as @a[hasitem={item=diamond,quantity=4..}] run scoreboard players add @s threat 20
 execute as @a[hasitem={item=diamond,quantity=5..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=6..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=7..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=8..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=9..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=10..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=11..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=12..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=13..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=14..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=15..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=16..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=17..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=18..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=19..}] run scoreboard players add @s threat 20
+execute as @a[hasitem={item=diamond,quantity=20..}] run scoreboard players add @s threat 20
 
 # ============================================================
 # EMERALD  (value: 15 per unit — 7 emeralds = 105)
