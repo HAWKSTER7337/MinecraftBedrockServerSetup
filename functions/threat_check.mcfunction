@@ -152,4 +152,4 @@ execute as @a[hasitem={item=netherite_ingot,quantity=2..}] run scoreboard player
 # ============================================================
 # TRIGGER — spawn mobs if threat >= 100 and not on cooldown
 # ============================================================
-execute as @a[scores={threat=100..},scores={spawn_cooldown=..0}] at @s run function functions/threat_spawn
+execute as @a[scores={threat=100..},scores={spawn_cooldown=..0}] at @s run function threat_spawn
