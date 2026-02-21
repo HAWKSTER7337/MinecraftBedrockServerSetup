@@ -150,6 +150,15 @@ execute as @a[hasitem={item=netherite_ingot,quantity=1..}] run scoreboard player
 execute as @a[hasitem={item=netherite_ingot,quantity=2..}] run scoreboard players add @s threat 40
 
 # ============================================================
-# TRIGGER — spawn mobs if threat >= 100 and not on cooldown
+# TRIGGER — threshold 500, 3-second warning before mobs spawn
 # ============================================================
-execute as @a[scores={threat=100..,spawn_cooldown=..0}] at @s run function threat_spawn
+
+# Step 1: Threshold hit, no cooldown, no spawn pending — start countdown and warn player
+execute as @a[scores={threat=500..,spawn_cooldown=..0,spawn_timer=0}] run scoreboard players set @s spawn_timer 3
+execute as @a[scores={spawn_timer=3}] run tellraw @s {"rawtext":[{"text":"§c§lYour ore haul has attracted dangerous creatures..."}]}
+
+# Step 2: Countdown reaches 1 — spawn mobs
+execute as @a[scores={spawn_timer=1}] at @s run function threat_spawn
+
+# Step 3: Tick down the spawn timer each second
+scoreboard players remove @a[scores={spawn_timer=1..}] spawn_timer 1

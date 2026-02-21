@@ -16,9 +16,6 @@
 # ===== Set 300-second cooldown =====
 scoreboard players set @s spawn_cooldown 300
 
-# ===== Warn the player =====
-tellraw @s {"rawtext":[{"text":"§c§lYour ore haul has attracted dangerous creatures..."}]}
-
 # ===========================================================
 # VINDICATOR NAMES
 # Counter cycles 0-7 and advances once per vindicator spawned
